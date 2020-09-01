@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	outline: none;
+	border: none;
+	background: none;
+}
+
+body {
+	font-family: sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('nature.jpg');
+}
+
+.btn-home {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 50%;
+	transition: border-color 0.2s;
+}
+
+.btn-home:hover {
+	border-color: rgba(0,0,0,0.8);
+}
+
+form {
+	height: 450px;
+	width: 450px;
+	padding: 150px;
+	border-radius: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background: rgba(230,230,230,0.7);
+
+	/* Ombre pour tout les navigateurs */
+	-webkit-box-shadow: 0px 0px 78px 4px rgba(0,0,0,0.49);
+	-moz-box-shadow: 0px 0px 78px 4px rgba(0,0,0,0.49);
+	box-shadow: 0px 0px 78px 4px rgba(0,0,0,0.49);
+}
+
+h1 {
+	margin: 20px 10px;
+	color: Black;
+	letter-spacing: 10px;
+	font-size: 2.5em;
+}
+
+.input-txt {
+	width: 250px;
+	margin: 10px;
+	padding: 15px;
+	font-size: 1.5em;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 50px;
+	background: white;
+}
+
+
+.input-txt:focus {
+	border: 1px solid green;
+}
+
+.input-submit {
+	margin: 20px 10px;
+	font-size: 1.3em;
+	border-radius: 25px;
+	background-color: white;
+	padding: 15px;
+	transition: color 0.3s, background 0.3s;
+	cursor: pointer;
+}
+
+.input-submit:hover {
+	color: white;
+	background: green;
+}
